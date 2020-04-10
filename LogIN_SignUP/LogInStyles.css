@@ -1,0 +1,101 @@
+
+body {
+	
+}
+.center{
+	
+	
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 35%;
+  border-top:double;
+  border-bottom:double;
+  border-left: double;
+  border-right: double;
+  border-width: 1px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right:5%;
+  border-radius: 40px;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-color: #40403d;
+  	
+	
+}
+.centerInreg{
+	
+	
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 35%;
+  border-top:double;
+  border-bottom:double;
+  border-left: double;
+  border-right: double;
+  border-width: 1px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right:5%;
+  border-radius: 40px;
+  border-color: #40403d;
+  	
+	
+}
+.fullPage{
+  height: 100%;
+  width: 100%;
+  position:absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  padding: 70px 0;
+   background-color: #cccccc; 
+  background-image: url("usv.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.Header{
+	padding-top: 13%;
+	padding-bottom: 3%;
+	text-align: center;
+	color: red;
+	font-family: "Lucida Console", Courier, monospace;
+}
+.mono{
+}
+
+
+.form-check-input
+{
+	color: red;
+}
+.text
+{
+	font-size:18px;
+	font-style: bold;
+	font-family: 'Helvetica Neue', sans-serif;
+
+
+}
+a:hover{
+	
+	background-color: green;
+}
+.button:hover
+{
+	width: 100%;
+}
