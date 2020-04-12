@@ -17,6 +17,6 @@ if(!$check)
     $_SESSION['nume']=$date_DB['nume'];
     $_SESSION['email']=$date_DB['email'];
     $_SESSION['cod']=$date_DB['cod'];
-	header("Location:../platformaMain/platformaStud.php");
+	header("Location:../platformaMain/Stud/platformaStud.php");
 	}
 ?>

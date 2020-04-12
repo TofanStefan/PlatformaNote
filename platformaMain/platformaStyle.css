@@ -1,0 +1,52 @@
+.body{
+    background-color: #000000;
+}
+.mid-col{
+
+    background-color:gray;
+    padding: .1%;
+    border-left:double;
+    border-right:double;
+    border-color: rgba(2, 1, 2, 0.17);
+}
+.img{
+    background-image: url("../LogIN_SignUP/usv.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.meniu{
+
+
+    text-align:center;
+    padding: 30px;
+    border-width: 3px;
+    margin-bottom: 60px;
+    border-radius: 25px;
+    font-size: 30px;
+    font-family: cursive;
+    border-top: none;
+
+
+}
+
+.scroll {
+    height:820px;
+    overflow-y: scroll;
+}
+.text{
+
+    font-size: 30px;
+    color: black;
+    margin: auto;
+    text-align: center;
+}
+.studenti{
+    background-color: #bebeba;
+    margin-top: 10px;
+}
+.studentiT {
+    font-size: 20px;
+    margin-bottom: 0;
+}

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(isset($_SESSION['id']))
-    header("Location:../platformaMain/platformaStud.php");
+    header("Location:../platformaMain/Stud/platformaStud.php");
 
 
 ?>
@@ -23,42 +23,35 @@ if(isset($_SESSION['id']))
 	<div class="fullPage">
 		
 
-<form method="POST"  class="was-validated" action="databaseCheck.php" >
-	<div class="container center ">
-		
-		<div class="form-group">
+        <form method="POST"  class="was-validated" action="databaseCheck.php" >
+	        <div class="container center ">
 
-		     <label class="text-danger text"  >Email:</label>
+                <div class="form-group">
 
-		          
-		       	<input type="email" name="email" class="form-control"  placeholder="&#xf501;  Introduceti email-ul." style="font-family:Arial, FontAwesome" required>
-          
+                    <label class="text-danger text"  >Email:</label>
+                    <input type="email" name="email" class="form-control"  placeholder="&#xf501;  Introduceti email-ul." style="font-family:Arial, FontAwesome" required>
 
-		</div>
-		<div class="form-group">
+                </div>
+                <div class="form-group">
 
-			<label class="text-danger text" >Parola:</label>
-
-				<input type="password" name="parola" class="form-control"  placeholder="&#xf084;  Introduceti parola. "style="font-family:Arial, FontAwesome" required>
-
-
-		</div>
-		<div class="form-group form-check-inline">
-            <label class="form-check-inline mono text-danger">
-            	<input class="form-check-input" type="radio" name="optradio" > <b>Profesor</b>
-            	
-            </label>
-            <label class="form-check-inline mono text-primary">
-               <input class="form-check-input" type="radio" name="optradio" checked="checked"> <b>Student</b>
-             </label>
-        </div>
-          <div style ="margin:auto;width: 50%;padding-left: 8%;padding-bottom: 2%">
-          	  <button class="btn btn-primary ">Logare</button>
-              <a href="Inregistrare.php" class="btn btn btn-danger" role="button">Inregistrare</a>
+                    <label class="text-danger text" >Parola:</label>
+                        <input type="password" name="parola" class="form-control"  placeholder="&#xf084;  Introduceti parola. "style="font-family:Arial, FontAwesome" required>
+                </div>
+                <div class="form-group form-check-inline">
+                    <label class="form-check-inline mono text-danger">
+                        <input class="form-check-input" type="radio" name="optradio" > <b>Profesor</b>
+                    </label>
+                    <label class="form-check-inline mono text-primary">
+                        <input class="form-check-input" type="radio" name="optradio" checked="checked"> <b>Student</b>
+                     </label>
+                </div>
+                <div style ="margin:auto;width: 50%;padding-left: 8%;padding-bottom: 2%">
+          	    <button class="btn btn-primary ">Logare</button>
+                <a href="Inregistrare.php" class="btn btn btn-danger" role="button">Inregistrare</a>
 
 
 
-</form>
+        </form>
         <?php
         // Mesaj cont creat cu succes
         if(isset($_GET['succes'])&&$_GET['succes']=='true')
