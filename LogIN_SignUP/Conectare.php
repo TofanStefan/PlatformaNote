@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['id']))
+    header("Location:../platformaMain/platformaStud.php");
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,18 +28,18 @@
 		
 		<div class="form-group">
 
-		     <label class="text-danger text" for="email" >Email:</label>
+		     <label class="text-danger text"  >Email:</label>
 
 		          
-		       	<input type="email" name="email" class="form-control" id="email" placeholder="&#xf501;  Introduceti email-ul." style="font-family:Arial, FontAwesome" required>
+		       	<input type="email" name="email" class="form-control"  placeholder="&#xf501;  Introduceti email-ul." style="font-family:Arial, FontAwesome" required>
           
 
 		</div>
 		<div class="form-group">
 
-			<label class="text-danger text" for="pwd">Parola:</label>
+			<label class="text-danger text" >Parola:</label>
 
-				<input type="password" name="parola" class="form-control" id="pwd" placeholder="&#xf084;  Introduceti parola. "style="font-family:Arial, FontAwesome" required>
+				<input type="password" name="parola" class="form-control"  placeholder="&#xf084;  Introduceti parola. "style="font-family:Arial, FontAwesome" required>
 
 
 		</div>
@@ -46,22 +53,21 @@
              </label>
         </div>
           <div style ="margin:auto;width: 50%;padding-left: 8%;padding-bottom: 2%">
-          	  <button class="btn-lg btn-primary ">Logare</button>
-          	 
-        	 
-        	
-          </div>
-          
-          <div style ="margin:auto;width: 50%;padding-left: 8%">
-          	  
-          	  <a href="Inregistrare.php" class="btn-lg btn btn-danger" role="button">Inregistrare</a>
-        	 
-        	
-          </div>
+          	  <button class="btn btn-primary ">Logare</button>
+              <a href="Inregistrare.php" class="btn btn btn-danger" role="button">Inregistrare</a>
 
-       
-    </div>
+
+
 </form>
+        <?php
+        // Mesaj cont creat cu succes
+        if(isset($_GET['succes'])&&$_GET['succes']=='true')
+        echo '<p style="color:#21ff2f;text-align:center;font-family: Consolas;font-size: 16px;padding-top:10%;">Cont creat cu succes!!</p>';
+        if(isset($_GET['succes'])&&$_GET['succes']=='false')
+            echo '<p style="color:#ff000f;text-align:center;font-family: Consolas;font-size: 16px;padding-top:10%;">Datele introduse sunt gresite..</p>';
+        ?>
+    </div>
+
 
 </div>
 

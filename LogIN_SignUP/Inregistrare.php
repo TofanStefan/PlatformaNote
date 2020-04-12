@@ -67,13 +67,15 @@
          <div>
            <button type="submit" class="btn btn-danger ">Inregistrare</button>
        </div>
-    
 
-       
     </div>
-</form>
 
+</form>
+      <?php
+      // Mesaj cont indisponibil
+      if(isset($_GET['succes'])&&$_GET['succes']=='false')
+          echo'<p style="color:#ff0c11;text-align:center;font-size: 16px;padding-top:5%;font-family: Constantia"> Acest email este deja folosit!!</p>'
+            ?>
 </div>
 </body>
 </html>
-?>
