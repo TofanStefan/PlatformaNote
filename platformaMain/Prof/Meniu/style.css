@@ -1,0 +1,10 @@
+
+#border:hover{
+    border-style: solid;
+    border-color: blue;
+    border-width: 6px;
+}
+img {
+    -webkit-filter: drop-shadow(5px 5px 5px #000000 );
+    filter: drop-shadow(5px 5px 5px #000000);
+}

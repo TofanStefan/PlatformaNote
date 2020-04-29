@@ -1,6 +1,6 @@
-<?php
- session_start();
- ?>
+﻿<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,45 +12,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/b8bb4f51ef.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../platformaStyle.css">
+    <link rel="stylesheet" href="stud.css">
 
 </head>
-<body style="background-color: #000000;">
-<div class="container-fluid">
-    <div class="row">
-         <div class="col-3" style="background-color:gray;padding-top: .2%;">
-            <?php
-                echo "<p style='font-size: 25px;font-family: Corbel;padding-left:5%;margin-bottom: 0;'>
-                            Welcome back ,$_SESSION[nume]!</p>";
-                $mydate=getdate(date("U"));
-                echo "<p style='font-size: 15px;font-family: Corbel;padding-left: 5%;'>$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year].</p>";
-             ?> </div>
-        <div class="col-6 mid-col"></div>
-         <div class="col-3" style="background-color:gray;padding: 1%;">
-        <form action="../logOut.php" style="padding-right: 7%">
-
-            <button class="btn btn-outline-dark float-right" style="font-weight:bold">Log Out</button>
-        </form>
+<body class="bg-dark" style="overflow: hidden";>
+<div class="row">
+    <div class="col-9"></div>
+    <div class="col-3">
+    <form class="float-right" action="../logOut.php">
+        <button class="btn btn-primary float-right" style="font-weight:bold">Log Out</button>
+    </form>
     </div>
-
 </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 meniu btn btn-xxl btn-outline-success" style="margin-top: 15%">
-                     Note
+    <div class="row vh-100 d-flex align-items-center justify-content-center">
+
+        <div class="col-md-3">
+            <a href="Studenti.php" style="display: block;">
+                <div id="border" class="card" style="border-radius: 30px; border-top-left-radius:60px; border-bottom-right-radius:60px;box-shadow: 0px 0px 50px rgba(0,0,0,0.8); ">
+
+                <div class="card-body text-center">
+                    <h4><span class="badge badge-dark  badge-pill text-wrap pb-1">NOTE</span></h4>
+                </div>
+                <img class="card-img-bottom card-image" src="grades.png">
             </div>
+            </a>
         </div>
-        <div class="row">
-            <div class="col-12 meniu btn btn-xxl btn-outline-success ">
-                <a>Media Totala</a>
+
+        <div class="col-md-3">
+            <a href="Studenti.php" style="display: block;">
+            <div id="border" class= "card" style="border-radius: 30px; border-top-left-radius:60px; border-bottom-right-radius:60px; box-shadow: 0px 0px 50px rgba(0,0,0,0.8); ">
+
+                <div class="card-body text-center">
+                    <h4><span class="badge badge-dark  badge-pill text-wrap pb-1">MESAJE</span></h4>
+                </div>
+                <img class="card-img-bottom card-image ml-2" src="mes.png">
             </div>
-         </div>
-        <div class="row">
-            <div class="col-12 meniu btn btn-xxl btn-outline-success">
-                <a  >Mesaje</a>
-            </div>
+            </a>
+        </div>
         </div>
     </div>
+
 </body>
 </html>
